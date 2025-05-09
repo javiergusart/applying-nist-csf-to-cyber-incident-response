@@ -1,14 +1,15 @@
-# Distributed Denial of Service (DDoS) Incident Analysis and Response
+# Applying NIST Cybersecurity Framework to a DDoS Incident
 
 ## Table of Contents
 1. [Overview](#overview)
-2. [Section 1: Summary of the Security Event](#section-1-summary-of-the-security-event)
-3. [Section 2: Identify](#section-2-identify)
-4. [Section 3: Protect](#section-3-protect)
-5. [Section 4: Detect](#section-4-detect)
-6. [Section 5: Respond](#section-5-respond)
-7. [Section 6: Recover](#section-6-recover)
-8. [Reflections](#reflections)
+2. [Scenario](#scenario)
+3. [Section 1: Summary of the Security Event](#section-1-summary-of-the-security-event)
+4. [Section 2: Identify](#section-2-identify)
+5. [Section 3: Protect](#section-3-protect)
+6. [Section 4: Detect](#section-4-detect)
+7. [Section 5: Respond](#section-5-respond)
+8. [Section 6: Recover](#section-6-recover)
+9. [Reflections](#reflections)
 
 ---
 
@@ -17,6 +18,16 @@
 This report was developed as part of the *Google Cybersecurity Professional Certificate* program. The objective is to analyze a Distributed Denial of Service (DDoS) incident using the **NIST Cybersecurity Framework (CSF)**. The incident affected a multimedia company that provides web design, graphic design, and social media marketing services.
 
 The attack caused a critical network outage, which was later identified as an ICMP flood exploiting a firewall vulnerability. This analysis outlines the response taken, systems impacted, and recommendations for future risk mitigation.
+
+---
+
+## Scenario
+
+A multimedia company providing web design, graphic design, and social media marketing services experienced a Distributed Denial of Service (DDoS) attack, disrupting its internal network for two hours. The attack flooded the network with ICMP packets, exploiting an unconfigured firewall and rendering critical services unavailable.
+
+The incident management team responded by blocking ICMP traffic, shutting down non-critical services, and restoring essential operations. A post-incident investigation revealed the attacker used spoofed ICMP packets to overwhelm the network.
+
+To prevent future incidents, the company implemented new firewall rules to limit ICMP traffic, enabled source IP verification, deployed network monitoring tools, and introduced an IDS/IPS system to detect and filter suspicious traffic.
 
 ---
 
