@@ -1,4 +1,4 @@
-# Applying NIST Cybersecurity Framework to a DDoS Incident
+# Applying the NIST Cybersecurity Framework to a DDoS Incident
 
 ## Table of Contents
 1. [Overview](#overview)
